@@ -1,0 +1,17 @@
+.head {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    position: absolute;
+    left: 50px;
+
+    .head__title {
+        font-size: 72px;
+    }
+
+    .head__text {
+        font-size: 42px;
+    }
+}
