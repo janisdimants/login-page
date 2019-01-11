@@ -3,7 +3,7 @@ import LoginForm from './LoginForm';
 class PasswordForm extends LoginForm {
     constructor(element) {
         super(element);
-        this.avatar = element.querySelector('.avatar');
+        this.avatar = document.querySelector('#avatar');
         this.email = element.querySelector('#email-submitted');
         this.password = element.querySelector('#password');
         this.passwordError = element.querySelector('#password-error');
