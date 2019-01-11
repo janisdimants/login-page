@@ -1,0 +1,77 @@
+.input-field {
+    display: flex;
+    width: 360px;
+    height: 48px;
+    background: $button-background;
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    padding: 12px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+
+    border: none;
+    border-width: 0px;
+    transition-property: border-bottom-width, height, padding-top, padding-bottom;
+    transition-duration: 0.2s, 0.5s, 0.5s, 0.5s;
+    transition-timing-function: linear, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, .7s, .7s, .7s;
+
+    color: $black;
+    
+    &::after {
+        content: '';
+        background-image: url('../assets/arrow-forward.svg')
+    }
+
+    &.input-field--success {
+        border-color: $success;
+        border-bottom-width: 8px;
+        border-style: solid;
+    }
+
+    &.input-field--error {
+        border-color: $error;
+        border-bottom-width: 8px;
+        border-style: solid;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.hidden {
+        height: 0px;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+.input-field__message {
+    height: 16px;
+    transition: height 0.5s ease-in-out;
+    overflow: hidden;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+
+    &.input-field__message--error {
+        color: $error;
+    }
+
+    &.input-field__message--warning {
+        color: $warning;
+    }
+
+    &.hidden {
+        height: 0px;
+        padding: 0;
+    }
+}

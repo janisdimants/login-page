@@ -7,13 +7,41 @@
     <title>Login Page</title>
 </head>
 <body>
-    <div class="head">
-        <div class="head__title">
-            Welcome,
+    <div class="container">
+        <div class="head">
+            <div class="head__title">
+                Welcome,
+            </div>
+            <div class="head__text">
+                log in to continue
+            </div>
         </div>
-        <div class="head__text">
-            log in to continue
-        </div>
+
+        <form id="email-form" class="form form__email">
+            <input required type="email" class="input-field" id="email" placeholder="Email">
+            <div class="input-field__error hidden" id="email-error">Email address is invalid!</div>
+
+            <button type="submit" class="button">Continue</button>
+
+            <a href="#" class="link">Create a new account</a>
+        </form>
+
+        <form id="password-form" class="form form__password hidden">
+            <div class="avatar">
+                <div class="avatar__image"></div>
+                <div class="avatar__text">John Smith</div>
+            </div>
+
+            <div class="input-field" id="email-submitted"></div>
+
+            <input required type="password" class="input-field hidden" id="password" placeholder="Password">
+            <div class="input-field__message input-field__message--error hidden" id="password-error">Password field is empty!</div>
+            <div class="input-field__message input-field__message--warning hidden" id="capslock-hint">Caps lock is enabled!</div>
+
+            <button type="submit" class="button">Login</button>
+
+            <a href="#" class="link">Forgot password?</a>
+        </form>
     </div>
 </body>
 </html>
