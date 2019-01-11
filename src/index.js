@@ -10,9 +10,7 @@ const passwordForm = new PasswordForm(document.getElementById("password-form"));
 
 emailForm.el.addEventListener('submit', (e) => {
     e.preventDefault();
-
     // Do backend validation here
-
     emailForm.hide();
     passwordForm.show();
 });

@@ -24,7 +24,10 @@
         </div>
 
         <form id="email-form" class="form form__email">
-            <input required type="email" class="input-field" id="email" placeholder="Email">
+            <div class="input--field__container">
+                <input required type="email" class="input-field" id="email" placeholder="Email">
+            </div>
+
             <div class="input-field__message input-field__message--error hidden" id="email-error">Email address is invalid!</div>
 
             <button type="submit" class="button">Continue</button>
@@ -33,9 +36,14 @@
         </form>
 
         <form id="password-form" class="form form__password hidden">
-            <div class="input-field" id="email-submitted"></div>
+            <div class="input--field__container">
+                <div class="input-field" id="email-submitted"></div>
+            </div>
 
-            <input required type="password" class="input-field hidden" id="password" placeholder="Password">
+            <div class="input--field__container">
+                <input required type="password" class="input-field hidden" id="password" placeholder="Password">
+                <button type="button" class="input-field__show-password" id="show-password"></button>
+            </div>
             <div class="input-field__message input-field__message--error hidden" id="password-error">Password field is empty!</div>
             <div class="input-field__message input-field__message--warning hidden" id="capslock-hint">Caps lock is enabled!</div>
 
